@@ -1,1 +1,40 @@
-fsa
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<title>Objetivo del Squad: 80% !</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h1>Calcular sueldo</h1>
+				<p>Completa el formulario y luego haz click en calcular para obtener el sueldo semanal.</p>
+				<hr>				
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-md-5 col-md-offset-2">
+				<div class="form-group">
+					<label for="exampleInputEmail">Horas trabajadas </label>
+					<input type="email" class="form-control" id="horas_trabajadas" placeholder="0">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail">Pago por horas </label>
+					<input type="email" class="form-control" id="pago_hora" placeholder="0">
+				</div>
+				<button onclick="calcular()" class="btn btn-default">Calcular</button>				
+			</div>
+			<div class="col-md-3">
+				<h4 class="text-info">El puntaje de tu Squad es:</h4>
+				<div id="salida" style="font-size:50px;" class="text-center">0</div>
+				<div id="mensajes"></div>
+			</div>			
+		</div>		
+	</div>	
+</body>
+<script src="Js/main.js"></script>
+</html>
